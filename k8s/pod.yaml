@@ -1,0 +1,13 @@
+# https://kubernetes.io/docs/concepts/workloads/pods/
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "myapp"
+  labels:
+    name: "myapp"
+spec:
+  containers:
+    - name: myapp
+      image: kurobaneshin/k8s
+      ports:
+        - containerPort: 8080
